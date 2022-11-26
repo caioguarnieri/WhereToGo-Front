@@ -1,14 +1,14 @@
 import Destination from "./Item";
 import styles from "./styles.module.css";
 
-const Steps = ({ steps, openModal }) => {
+const Steps = ({ steps, setSteps, openModal }) => {
   console.log(steps);
 
   return (
     <ul className={styles.list}>
       <>
         {steps?.map((step) => (
-          <Destination key={step._id} {...step} />
+          <Destination key={step._id} {...step} setSteps={setSteps} />
         ))}
         <li className={styles.btnContainer}>
           <button

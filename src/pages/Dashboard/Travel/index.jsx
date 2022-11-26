@@ -85,7 +85,7 @@ const TravelPage = () => {
             </div>
           ) : (
             <>
-              <Steps steps={steps} openModal={openModal} />
+              <Steps steps={steps} setSteps={setSteps} openModal={openModal} />
             </>
           )}
           {modalIsOpen && (

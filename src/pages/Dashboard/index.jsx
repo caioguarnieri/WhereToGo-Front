@@ -79,7 +79,11 @@ const DashboardPage = () => {
           </div>
         ) : (
           <>
-            <Travels travels={travels} openModal={openModal} />
+            <Travels
+              travels={travels}
+              setTravels={setTravels}
+              openModal={openModal}
+            />
           </>
         )}
         {modalIsOpen && (

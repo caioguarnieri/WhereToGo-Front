@@ -10,10 +10,8 @@
 
   display: flex;
   flex-direction: column;
-}
 
-.item:hover {
-  filter: brightness(0.8);
+  position: relative;
 }
 
 .city {
@@ -29,4 +27,21 @@
 
 .budget {
   font-weight: 600;
+}
+
+.remove {
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  top: calc(-25px / 3);
+  right: calc(-25px / 3);
+  z-index: 5;
+}
+
+.remove:hover {
+  filter: brightness(0.8);
 }

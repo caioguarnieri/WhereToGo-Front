@@ -1,5 +1,7 @@
 import styles from "./styles.module.css";
+
 import BgImage from "../../assets/bg-signup.jpg";
+
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/elements/Input";
@@ -45,12 +47,12 @@ const SignupPage = () => {
         <img className={styles.image} src={BgImage} alt="Background" />
 
         <Form title="Cadastro" onSubmit={handleSubmit(onSubmit)}>
-          <Label htmlFor="name">Usuario</Label>
+          <Label htmlFor="name">Nome</Label>
           <Input
             type="text"
             name="name"
             title="Nome"
-            placeholder="Crie um Usuario"
+            placeholder="Digite seu nome"
             required
             register={register}
           />

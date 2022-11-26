@@ -1,6 +1,6 @@
 const signup = async (data) => {
   try {
-    const response = await fetch("https://drab-red-rhinoceros-tutu.cyclic.app/auth/signup", {
+    const response = await fetch("http://localhost:5000/auth/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -18,7 +18,7 @@ const signup = async (data) => {
 
 const signin = async (data) => {
   try {
-    const response = await fetch("https://drab-red-rhinoceros-tutu.cyclic.app/auth/signin", {
+    const response = await fetch("http://localhost:5000/auth/signin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

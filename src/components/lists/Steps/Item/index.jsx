@@ -1,12 +1,15 @@
 import styles from "./styles.module.css";
+import stepsServices from "../../../../services/steps";
 
 const Step = ({
+  _id,
   destination,
   startDate,
   endDate,
   budget,
   description,
   status,
+  setSteps,
 }) => {
   const formattedBudget = new Intl.NumberFormat("pt-BR", {
     style: "currency",
@@ -24,6 +27,19 @@ const Step = ({
       <span className={styles.period}>
         {formattedDate(startDate)} - {formattedDate(endDate)}
       </span>
+      <button
+        className={styles.remove}
+        type="button"
+        title="Remover Parada"
+        onClick={async () => {
+          await stepsServices.destroy(_id);
+          setSteps((prevState) => {
+            return prevState.filter((elem) => elem._id !== _id);
+          });
+        }}
+      >
+        X
+      </button>
     </li>
   );
 };

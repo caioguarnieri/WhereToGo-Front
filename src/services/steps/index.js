@@ -1,6 +1,6 @@
 const list = async () => {
   try {
-    const response = await fetch("https://drab-red-rhinoceros-tutu.cyclic.app/steps", {
+    const response = await fetch("http://localhost:5000/steps", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -17,7 +17,7 @@ const list = async () => {
 
 const show = async (id) => {
   try {
-    const response = await fetch(`https://drab-red-rhinoceros-tutu.cyclic.app/steps/${id}`, {
+    const response = await fetch(`http://localhost:5000/steps/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ const show = async (id) => {
 
 const create = async (data) => {
   try {
-    const response = await fetch("https://drab-red-rhinoceros-tutu.cyclic.app/steps", {
+    const response = await fetch("http://localhost:5000/steps", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -52,7 +52,7 @@ const create = async (data) => {
 
 const update = async (data, id) => {
   try {
-    const response = await fetch(`https://drab-red-rhinoceros-tutu.cyclic.app/steps/${id}`, {
+    const response = await fetch(`http://localhost:5000/steps/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -70,7 +70,7 @@ const update = async (data, id) => {
 
 const destroy = async (id) => {
   try {
-    const response = await fetch(`https://drab-red-rhinoceros-tutu.cyclic.app/steps/${id}`, {
+    const response = await fetch(`http://localhost:5000/steps/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
