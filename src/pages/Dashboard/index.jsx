@@ -73,9 +73,9 @@ const DashboardPage = () => {
         {!travels.length ? (
           <div className={styles.primaryTravel}>
             <h2>Você ainda não tem nenhuma viagem!</h2>
-            <Link className={styles.btn} to={`/dashboard/1`}>
+            <button className={styles.btn} onClick={openModal}>
               Desejo criar minha primeira viagem
-            </Link>
+            </button>
           </div>
         ) : (
           <>
