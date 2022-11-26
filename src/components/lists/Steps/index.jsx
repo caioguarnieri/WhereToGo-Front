@@ -2,7 +2,7 @@ import Destination from "./Item";
 import styles from "./styles.module.css";
 
 const Steps = ({ steps, setSteps, openModal }) => {
-  console.log(steps);
+
 
   return (
     <ul className={styles.list}>

@@ -11,7 +11,7 @@ const signup = async (data) => {
     const responseJson = await response.json();
     return responseJson;
   } catch (error) {
-    console.log(error);
+  
     return false;
   }
 };
@@ -27,10 +27,10 @@ const signin = async (data) => {
     });
 
     const responseJson = await response.json();
-    console.log(responseJson);
+    
     return responseJson;
   } catch (error) {
-    console.log(error);
+    
     return false;
   }
 };

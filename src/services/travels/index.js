@@ -10,7 +10,7 @@ const list = async () => {
     const responseJson = await response.json();
     return responseJson;
   } catch (error) {
-    console.log(error);
+  
     return false;
   }
 };
@@ -25,10 +25,10 @@ const show = async (id) => {
     });
 
     const responseJson = await response.json();
-    console.log(responseJson);
+    
     return responseJson;
   } catch (error) {
-    console.log(error);
+   
     return false;
   }
 };
@@ -46,7 +46,7 @@ const create = async (data) => {
     const responseJson = await response.json();
     return responseJson;
   } catch (error) {
-    console.log(error);
+    
     return false;
   }
 };
@@ -64,7 +64,7 @@ const update = async (data, id) => {
     const responseJson = await response.json();
     return responseJson;
   } catch (error) {
-    console.log(error);
+   
     return false;
   }
 };
@@ -81,7 +81,7 @@ const destroy = async (id) => {
     await response.json();
     return true;
   } catch (error) {
-    console.log(error);
+    
     return false;
   }
 };
