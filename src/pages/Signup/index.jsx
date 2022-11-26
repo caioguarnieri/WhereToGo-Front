@@ -47,12 +47,12 @@ const SignupPage = () => {
         <img className={styles.image} src={BgImage} alt="Background" />
 
         <Form title="Cadastro" onSubmit={handleSubmit(onSubmit)}>
-          <Label htmlFor="name">Nome</Label>
+          <Label htmlFor="name">Usuario</Label>
           <Input
             type="text"
             name="name"
             title="Nome"
-            placeholder="Digite seu nome"
+            placeholder="Crie um Usuario"
             required
             register={register}
           />
