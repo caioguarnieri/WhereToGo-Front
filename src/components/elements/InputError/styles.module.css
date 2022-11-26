@@ -1,0 +1,9 @@
+.error {
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  color: red;
+
+  margin-top: -25px;
+  margin-bottom: 30px;
+}

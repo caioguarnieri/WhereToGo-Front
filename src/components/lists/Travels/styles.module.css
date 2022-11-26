@@ -1,0 +1,28 @@
+.travels {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.btnContainer {
+  height: 100%;
+}
+
+.btn {
+  width: 30px;
+  height: 30px;
+
+  transition: all ease 0.3s;
+  cursor: pointer;
+
+  background: linear-gradient(to right, #7633ff, #481d9e);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #ffffff;
+}
