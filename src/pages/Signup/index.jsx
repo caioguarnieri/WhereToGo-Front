@@ -1,7 +1,5 @@
 import styles from "./styles.module.css";
-
 import BgImage from "../../assets/bg-signup.jpg";
-
 import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Input from "../../components/elements/Input";
