@@ -1,13 +1,12 @@
 .travel {
   cursor: pointer;
   width: fit-content;
+  height: 200px;
   padding: 15px 15px;
   border-radius: 15px;
-
   background-color: #7633ff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   color: #fff;
-
   display: flex;
   flex-direction: column;
 
@@ -15,13 +14,14 @@
 }
 
 .title {
-  font-size: 1.3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 
 .period {
+  font-size: larger;
   font-weight: 300;
   color: #e5e5e5;
   margin-bottom: 20px;
@@ -29,8 +29,7 @@
 }
 
 .description {
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 2rem;
   text-align: justify;
 }
 

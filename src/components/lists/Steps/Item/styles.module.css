@@ -1,13 +1,12 @@
 .item {
   cursor: pointer;
   width: fit-content;
+  height: 200px;
   padding: 15px 25px;
   border-radius: 15px;
-
   background-color: #7633ff;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
   color: #fff;
-
   display: flex;
   flex-direction: column;
 
@@ -15,18 +14,18 @@
 }
 
 .city {
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
 
 .period {
-  font-weight: 300;
+  font-size: medium;
 }
 
 .budget {
-  font-weight: 600;
+ font-size: medium;
 }
 
 .remove {
